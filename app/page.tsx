@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Menu, X, Phone, Shield, Zap, Home, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Menu, X, Phone, Shield, Zap, Home as HomeIcon, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,7 +30,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center space-x-2">
-              <Home className="w-8 h-8 text-[#d4af37]" />
+              <HomeIcon className="w-8 h-8 text-[#d4af37]" />
               <span className="text-2xl font-bold text-[#d4af37]">noisegard</span>
             </div>
 
@@ -352,7 +352,7 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <Home className="w-8 h-8 text-[#d4af37]" />
+                <HomeIcon className="w-8 h-8 text-[#d4af37]" />
                 <span className="text-2xl font-bold text-[#d4af37]">noisegard</span>
               </div>
               <p className="text-gray-400 mb-4 max-w-md">
